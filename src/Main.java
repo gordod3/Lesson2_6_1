@@ -6,6 +6,8 @@ public class Main {
         Float c = 2.1F, d = 4.2F;
         Box<Number> box1 = new Box<>(a, b);
         Box<Float> box2 = new Box<>(c, d);
+        addition(box1, box2);
+        multiplication(box1, box2);
     }
 
     private static void addition(Box<? extends Number> box1, Box<? extends Number> box2){
