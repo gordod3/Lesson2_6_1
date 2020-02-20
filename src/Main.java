@@ -11,10 +11,10 @@ public class Main {
     }
 
     private static void addition(Box<? extends Number> box1, Box<? extends Number> box2){
-        System.out.println((Double)box1.getNumberl() + (Double)box1.getNumber2() + (Double)box2.getNumberl() + (Double)box2.getNumber2());
+        System.out.println(box1.getNumberl().doubleValue() + box1.getNumber2().doubleValue() + box2.getNumberl().doubleValue() + box2.getNumber2().doubleValue());
     }
     private static void multiplication(Box<? extends Number> box1, Box<? extends Number> box2){
-        System.out.println((Double)box1.getNumberl() * (Double)box1.getNumber2() * (Double)box2.getNumberl() * (Double)box2.getNumber2());
+        System.out.println(box1.getNumberl().doubleValue() * box1.getNumber2().doubleValue() * box2.getNumberl().doubleValue() * box2.getNumber2().doubleValue());
     }
 
 }
